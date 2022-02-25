@@ -1,1 +1,2 @@
-#.vscode/
+#.vscode/*
+# Reminder: git rm --cached .vscode/tasks.json
