@@ -1,2 +1,5 @@
----
-# handlers file for zz_rolemodel
+# ---
+# - name: Restart service
+#   ansible.builtin.service:
+#     name: service
+#     state: restarted
