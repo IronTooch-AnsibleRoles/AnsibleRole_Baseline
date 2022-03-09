@@ -18,7 +18,7 @@
             "label": "Deploy App at stage",
             "detail": "Runs the play",
             "type": "shell",
-            "command": "/usr/local/bin/ansible-playbook ./tests/test.yml -i TEST_SERVER_IP, -u local_admin --start-at-task=\"TASK_NAME\"  -e ./tests/local_vars.yml",
+            "command": "/usr/local/bin/ansible-playbook ./tests/test.yml -i TEST_SERVER_IP, -u TEST_SERVER_USER --start-at-task=\"TASK_NAME\"  -e ./tests/local_vars.yml",
             "presentation": {
                 "reveal": "always",
                 "panel": "new"
