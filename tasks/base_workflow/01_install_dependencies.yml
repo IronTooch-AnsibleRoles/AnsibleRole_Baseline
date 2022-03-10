@@ -11,11 +11,11 @@
   delay: 6
   retries: 10
 
-- name: Create temporary build directory for Guac
+- name: Create temporary build directory for my_app
   ansible.builtin.tempfile:
     state: directory
   register: my_app_temp_dir_raw
 
-- name: Play Temporary Path
+- name: Set Temporary Path
   ansible.builtin.set_fact:
     my_app_temp_dir: "{{ my_app_temp_dir_raw.path }}"
